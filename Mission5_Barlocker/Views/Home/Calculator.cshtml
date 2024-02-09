@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Calculator";
+}
+<h1 class="mb-4">Rock Climbing Tutoring Fee Calculator</h1>
+
+<form style="max-width: 200px" id="calculatorForm">
+    <div class="form-group">
+        <label style="font-size:25px" for="hours">Number of Hours:</label>
+        <input type="number" class="form-control" id="hours" name="hours" required>
+        <label style="font-size:25px" for="hourlyRate">Hourly Rate:</label>
+        <input type="text" class="form-control" id="hourlyRate" name="hourlyRate" value="$20" readonly>
+    </div>
+    <br />
+    <button id="calculateTotal" type="button" class="btn btn-primary" onclick="calculateTotal()">Calculate Total</button>
+</form>
+<br />
+<div>
+    <h2 class="mb-4" id="totalCost"></h2>
+</div>
